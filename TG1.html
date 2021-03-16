@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Tugas 1</title>
+    </head>
+    <script language="JavaScript">
+        //Menginput nilai
+        var nilai = prompt ("nilai (0-100): ",0);
+        var hasil = "";
+
+        if (nilai >= 41 && nilai <=55){
+            hasil = "D"; //Jika nilai 41-55 maka hasilnya "D"
+        }
+        else if(nilai >= 56 && nilai <= 60){
+            hasil = "C"; //Jika nilai 56-60 maka hasilnya "C"
+        }
+        else if(nilai >= 61 && nilai <=65){
+            hasil = "BC"; //Jika nilai 61-65 maka hasilnya "BC"
+        }
+        else if(nilai >= 66 && nilai <=70){
+            hasil = "B"; //Jika nilai 66-70 maka hasilnya "B"
+        }
+        else if(nilai >= 71 && nilai <=80){
+            hasil = "AB"; //Jika nilai 71-80 maka hasilnya "AB"
+        }
+        else if(nilai >= 81 && nilai <=100){
+            hasil = "A"; //Jika nilai 81-100 maka hasilnya "A"
+        }
+        else{
+            hasil = "Nilai bukan 0-100"
+        }
+        document.write("Hasil: "+hasil) //Menampilkan nilai
+    </script>
+</html>

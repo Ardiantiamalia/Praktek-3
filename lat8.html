@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Contoh Program JavaScript</title>
+    </head>
+    <script language = "JavaScript">
+        function test()
+        {
+        //Menginputkan nilai 
+        val1=window.prompt("Input Nilai (1-5): ")
+        switch (val1)
+        {
+            case "1" : //Memasukkan nilai 1 maka muncul bilangan satu
+            document.write("bilangan satu")
+            break
+
+            case "2" : //Memasukkan nilai 2 maka muncul bilangan dua
+            document.write("bilangan dua")
+            break
+
+            case "3" : //Memasukkan nilai 3 maka muncul bilangan tiga
+            document.write("bilangan tiga")
+            break
+
+            case "4" : //Memasukkan nilai 4 maka muncul bilangan empat
+            document.write("bilangan empat")
+            break
+
+            case "5" : //Memasukkan nilai 5 maka muncul bilangan lima
+            document.write("bilangan lima")
+            break
+
+            default : //Memasukkan nilai yang tidak ada didalam case
+            document.write("bilangan lainnya")
+        }
+        }
+     </script>
+<body>
+      <!--Button untuk memanggil switch tes-->
+    <input type="button" name="button1" value="switch" onclick=test()>
+</body>
+</html>

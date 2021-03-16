@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Tugas 2</title>
+    </head>
+    <script language="JavaScript">
+        //Aritmatika penjumlahan
+        function tambah() {
+            var bilangan1 = document.kirim.T1.value
+            var bilangan2 = document.kirim.T2.value
+
+            document.kirim.T3.value = parseInt(bilangan1)+parseInt(bilangan2)
+        }
+        //Aritmatika pengurangan
+        function kurang(){
+            var bilangan1 = document.kirim.T1.value
+            var bilangan2 = document.kirim.T2.value
+
+            document.kirim.T3.value = bilangan1-bilangan2
+        }
+        //Aritmatika perkalian
+        function kali(){
+            var bilangan1 = document.kirim.T1.value
+            var bilangan2 = document.kirim.T2.value
+
+            document.kirim.T3.value = bilangan1*bilangan2
+        } 
+        //Aritmatika pembagian
+        function bagi(){
+            var bilangan1 = document.kirim.T1.value
+            var bilangan2 = document.kirim.T2.value
+
+            document.kirim.T3.value = bilangan1/bilangan2
+        } 
+        //Aritmatika modulus
+        function modulus(){
+            var bilangan1 = document.kirim.T1.value
+            var bilangan2 = document.kirim.T2.value
+
+            document.kirim.T3.value = bilangan1%bilangan2
+        } 
+    </script>
+    <body>
+        <form method="POST" name="kirim">
+            <p>
+            bilangan 1
+            <input type="number" name="T1" size="20">
+            bilangan 2
+            <input type="number" name="T2" size="20">
+            hasil <!--Hasil nilai-->
+            <input type="text" name="T3" size="20" readonly="">
+            </p>
+            <p>
+                <input type="button" name="b1" value="+" onClick= tambah()>
+                <input type="button" name="b1" value="-" onClick= kurang()>
+                <input type="button" name="b1" value="*" onClick= kali()>
+                <input type="button" name="b1" value="/" onClick= bagi()>
+                <input type="button" name="b1" value="%" onClick= modulus()>
+            </p>
+        </form>
+    </body>
+</html>
